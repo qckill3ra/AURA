@@ -1,0 +1,20 @@
+aura:
+  name: AURA
+  version: "0.1-alpha"
+
+user:
+  name: Pierre-Luc
+
+llm:
+  provider: ollama
+  model: qwen3:8b
+  host: http://localhost:11434
+
+security:
+  internet_access: false
+  allow_file_delete: false
+  allow_password_access: false
+  require_confirmation: true
+
+memory:
+  database: database/aura.db

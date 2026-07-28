@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environnement virtuel
+venv/
+
+# Base locale
+*.db
+
+# Logs
+logs/*.log
+
+# Secrets
+.env
+
+# Modèles IA
+models/
+
+# Configuration privée
+config/private.yaml
