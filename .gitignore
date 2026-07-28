@@ -19,3 +19,5 @@ models/
 
 # Configuration privée
 config/private.yaml
+# Qdrant
+Qdrant/
