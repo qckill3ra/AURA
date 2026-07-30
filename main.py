@@ -1,7 +1,7 @@
 from core.aura_core import AuraCore
 
 
-aura = AuraCore("qwen3:8b")
+aura = AuraCore()
 
 
 print("AURA 0.1 Alpha démarrée")

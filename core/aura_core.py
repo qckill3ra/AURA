@@ -1,31 +1,28 @@
-import ollama
+from core.config_manager import ConfigManager
+from core.llm_manager import LLMManager
+from core.memory_manager import MemoryManager
 
 
 class AuraCore:
 
-    def __init__(self, model):
-        self.model = model
+    def __init__(self):
 
+        # Configuration
+        self.config = ConfigManager()
 
-    def ask(self, message):
+        # Mémoire
+        self.memory = MemoryManager()
 
-        response = ollama.chat(
-            model=self.model,
-            messages=[
-                {
-                    "role": "system",
-                    "content":
-                    """
-                    Tu es AURA.
-                    Assistante IA locale sécurisée.
-                    Tu demandes confirmation avant toute action.
-                    """
-                },
-                {
-                    "role": "user",
-                    "content": message
-                }
-            ]
-        )
+        # Modèle IA
+        model = self.config.get("llm", "model")
 
-        return response["message"]["content"]
+        # LLM
+        self.llm = LLMManager(model)
+
+    def ask(self, user_message):
+
+        # Construction du contexte complet
+        prompt = self.memory.build_context(user_message)
+
+        # Envoi au LLM
+        return self.llm.ask(prompt)
