@@ -139,3 +139,6 @@ ROADMAP.md
 AURA 0.1.2 Alpha
 
 Memory Engine en développement.
+## Test GitHub Actions
+
+Workflow automation test.
