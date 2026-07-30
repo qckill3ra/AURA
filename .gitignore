@@ -21,3 +21,10 @@ models/
 config/private.yaml
 # Qdrant
 Qdrant/
+
+# Local database files
+database/*.db
+database/*.sqlite
+
+# SQLite tools
+database/sqlite-tools*/
