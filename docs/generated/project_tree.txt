@@ -1,0 +1,52 @@
+.
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── README.md
+├── ROADMAP.md
+├── SECURITY.md
+├── config
+│   └── config.yaml
+├── core
+│   ├── aura_core.py
+│   ├── config_manager.py
+│   ├── llm_manager.py
+│   ├── logger.py
+│   └── memory_manager.py
+├── docs
+│   ├── 00-vision.md
+│   ├── 01-architecture.md
+│   ├── architecture
+│   │   ├── architecture.md
+│   │   ├── coding_guidelines.md
+│   │   ├── dependency_graph.md
+│   │   ├── event_system.md
+│   │   ├── folder_structure.md
+│   │   ├── memory_engine.md
+│   │   ├── plugin_sdk.md
+│   │   └── provider_system.md
+│   ├── decisions
+│   │   ├── ADR-0001.md
+│   │   ├── ADR-0002.md
+│   │   └── ADR-0003.md
+│   ├── diagrams
+│   │   └── system.md
+│   ├── generated
+│   │   └── project_tree.txt
+│   └── roadmap
+│       ├── 0.1.md
+│       ├── 0.2.md
+│       ├── 0.3.md
+│       └── 1.0.md
+├── main.py
+├── memory
+│   ├── aura_identity.md
+│   ├── homelab.md
+│   ├── projects.md
+│   ├── security.md
+│   └── user_profile.md
+├── requirements.txt
+├── security
+│   └── permissions.py
+└── test_ollama.py
+
+11 directories, 39 files
